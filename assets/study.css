@@ -1,0 +1,132 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.form{
+    background: linear-gradient(var(--color-primary-lighter) 30%,var(--color-line-in-white) 30%) no-repeat;
+}
+.form-info{
+    margin: -70px auto;
+    width: 70rem;
+    padding: 40px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    margin: 10px 10vh;
+}
+.btn-back > img{
+    width: 5rem;
+}
+.logo{
+    width:  5rem;
+    float: right;
+}
+.text{
+    width: 70rem;
+    margin: 30px auto;
+}
+.text h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.input{
+    border-radius: 5px;
+    width: 1fr;
+    display: flex;
+    height: 4rem;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    color: var(--color-text-complement);
+    margin: 20px 0;
+    background: #fff;
+    border: 1px solid var(--color-text-complement);
+}
+.select{
+    width: 30%;
+    cursor: pointer;
+}
+.inline{
+    display: inline;
+    margin: 20px 2px;
+}
+.horario{
+    margin: 20px 0;
+    display: flex;
+}
+.semana{
+    margin-left: 210px;
+}
+.horas{
+    margin-left: 420px;
+}
+h3{
+    top: 130px;
+    position: absolute;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.content{
+    font-size: 1.5rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    color: var(--color-text-complement);
+}
+.professor{
+    margin: 30px auto;
+    background: #ffffff;
+    width: 70rem;
+    border-radius: 5px 5px 0 0 ;
+    padding: 40px;
+}
+.professor p{
+    font-size: 1.5rem;
+    color: var(--color-text-complement);
+}
+h4{
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: var(--color-text-complement);
+}
+h6{
+    font-size: 1.3rem;
+    font-weight: none;
+    color: var(--color-text-complement);
+}
+b{
+    color: var(--color-primary-darker);
+}
+.price{
+    background: var(--color-background);
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    border-top: 1px solid var(--color-text-in-primary);
+    box-sizing: border-box;
+    width: 112%;
+    position: relative;
+    top: -30px;
+}
+.btn{
+    display: inline-flex;
+    border-radius: 5px;
+    background: var(--color-secondary);
+    align-items: center;
+    width: 12rem;
+    height: 3rem;
+    padding: 5px;
+    text-decoration: none;
+    float: right;
+    top: -30px;
+    position: relative;
+    color: #fff;
+}
+.btn img{
+    margin-right: 5px;
+}
+.btn:hover{
+    background: var(--color-secondary-dark);
+}
