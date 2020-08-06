@@ -1,13 +1,18 @@
 :root{
     font-size: 70%;
 }
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 .form{
     background: linear-gradient(var(--color-primary-lighter) 30%,var(--color-line-in-white) 30%) no-repeat;
-    width: 100%;
-    height: 100vh;
+
 }
 .form-info{
-    margin: -70px auto;
+    margin: 0 auto;
     width: 70rem;
     padding: 40px;
 }
@@ -75,10 +80,11 @@ h3{
 }
 .inputs{
     height: auto;
+    margin-top: -120px;
     text-align: center;
 }
 .professor{
-    margin: auto;
+    margin: 0 auto;
     background: #ffffff;
     width: 70rem;
     border-radius: 5px 5px 0 0 ;
@@ -125,7 +131,7 @@ b{
     background: var(--color-background);
     width: 865px;
     height: auto;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 .price{
     border-top: 1px solid var(--color-line-in-white);

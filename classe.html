@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proffy</title>
-    <link rel="stylesheet" href="./assets/main.css">
-    <link rel="stylesheet" href="./assets/class.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/class.css">
 </head>
 <body class="form">
     <div class="container">
@@ -24,7 +24,7 @@
                     <h3>Nome completo</h3>
                     <input type="text" class="input">
                     <h3>Link da sua foto  (comece com http)</h3>
-                    <input type="text" class="input">
+                    <input type="url" class="input">
                     <h3>Whatsapp  (somente números)</h3>
                     <input type="number" class="input">
                     <h3>Biografia</h3>
@@ -45,36 +45,41 @@
                     <input type="number" class="input">
                     <div class="hours">
                         <h4>Horários disponíveis</h4>
-                        <button class="btn-add">+ Novo horário</button>
+                        <button class="btn-add" id="btn">+ Novo horário</button>
                     </div>
-                    <div class="agenda">
-                       <div class="inline">
-                            <h3>Dia da Semana</h3>
-                            <select class="select-input">
-                                <option value="1">Domingo</option>
-                                <option value="2">Segunda</option>
-                                <option value="3">Terça</option>
-                                <option value="4">Quarta</option>
-                                <option value="5">Quinta</option>
-                                <option value="6">Sexta</option>
-                                <option value="7">Sábado</option>
-                            </select>
-                       </div>
-                       <div class="inline">
-                           <h3>Das</h3>
-                           <input class="input" type="time">
-                       </div>
-                       <div class="inline">
-                            <h3>Das</h3>
-                            <input class="input" type="time">
+                    <section id="schedule-box">
+                        <div class="schedule" id="schedule">
+                            <section class="horario">
+                                <div class="inline">
+                                    <h3>Dia da Semana</h3>
+                                    <select class="select-input">
+                                        <option value="1">Domingo</option>
+                                        <option value="2">Segunda</option>
+                                        <option value="3">Terça</option>
+                                        <option value="4">Quarta</option>
+                                        <option value="5">Quinta</option>
+                                        <option value="6">Sexta</option>
+                                        <option value="7">Sábado</option>
+                                    </select>
+                               </div>
+                               <div class="inline">
+                                   <h3>Das</h3>
+                                   <input class="input" type="time">
+                               </div>
+                               <div class="inline">
+                                    <h3>Das</h3>
+                                    <input class="input" type="time">
+                                </div>
+                            </section>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
-            <div class="agenda">
+            <div class="warning">
                 <p class="inline"><img src="./images/icons/warning.svg"> Importante! preencha todos os dados</p>
                 <button class="btn inline">Salvar Cadastro</button>
             </div>
         </div>
+    <script src="./assets/js/addSchedule.js"></script>
 </body>
 </html>
