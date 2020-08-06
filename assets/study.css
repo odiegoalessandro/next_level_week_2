@@ -1,3 +1,6 @@
+:root{
+    font-size: 70%;
+}
 .form{
     background: linear-gradient(var(--color-primary-lighter) 30%,var(--color-line-in-white) 30%) no-repeat;
     width: 100%;
@@ -23,7 +26,7 @@
     float: right;
 }
 .text{
-    width: 70rem;
+    width: 65rem;
     margin: 30px auto;
 }
 .text h2{
@@ -32,10 +35,10 @@
 }
 .input{
     border-radius: 5px;
-    width: 1fr;
+    width: 13rem;
     display: flex;
     height: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 0 10px;
     color: var(--color-text-complement);
     margin: 20px 0;
@@ -43,26 +46,22 @@
     border: 1px solid var(--color-text-complement);
 }
 .select{
-    width: 30%;
     cursor: pointer;
 }
 .inline{
     display: inline;
-    margin: 20px 2px;
+    margin: 25px 2px;
 }
-.horario{
-    margin: 20px 0;
-    display: flex;
+.materias{
+    display: inline-flex;
+    margin: 90px auto;
 }
-.semana{
-    margin-left: 210px;
-}
-.horas{
-    margin-left: 420px;
+.teachers{
+    margin: 0 auto;
 }
 h3{
-    top: 130px;
     position: absolute;
+    display: inline-flex;
     font-size: 1.4rem;
     color: #fff;
 }
@@ -73,6 +72,10 @@ h3{
     align-items: center;
     min-height: 40vh;
     color: var(--color-text-complement);
+}
+.inputs{
+    height: auto;
+    text-align: center;
 }
 .professor{
     margin: auto;
@@ -99,18 +102,16 @@ b{
     color: var(--color-primary-darker);
 }
 .btn{
-    display: inline-flex;
+    display: flex;
     border-radius: 5px;
     background: var(--color-secondary);
-    float: right;
     align-items: center;
-    width: 12rem;
+    width: 15rem;
     height: 3rem;
     padding: 5px;
     text-decoration: none;
-    position: relative;
     color: #fff;
-    left: 450px;
+    margin-left: 550px;
 }
 .btn img{
     margin-right: 5px;
@@ -122,15 +123,35 @@ b{
     display: flex;
     flex-direction: column;
     background: var(--color-background);
-    width: 754px;
+    width: 865px;
     height: auto;
     margin: 30px auto;
 }
 .price{
     border-top: 1px solid var(--color-line-in-white);
     padding: 0 20px;
-    width: 750px;
     height: 100px;
     display: flex;
     align-items: center;
+}
+input[type = "time"]
+{
+    cursor: text;
+}
+.btn--green{
+    display: inline-flex;
+    border-radius: 5px;
+    background: var(--color-secondary);
+    align-items: center;
+    width: 13rem;
+    justify-content: center;
+    border: none;
+    height: 4rem;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+.btn--green:hover{
+    background: var(--color-secondary-dark);
 }
