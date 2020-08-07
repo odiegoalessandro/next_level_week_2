@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy</title>
+    <link rel="stylesheet" href="../../public/styles/main.css">
+    <link rel="stylesheet" href="../../public/styles/study.css">
+</head>
+<body class="form">
+    <div class="container">
+        <header class="menu">
+            <a href="/" class="btn-back"><img src="../../public/images/icons/back.svg" class="back" alt="Voltar"></a>
+            <img src="../../public/images/logo.svg" alt="Proffy" class="logo"> 
+        </header>
+        <div class="text">
+            <h2>Esses são so proffys disponíveis.</h2>
+        </div>
+        <nav class="form-info">
+            <div class="inputs">
+                    <div class="materias">
+                        <div class="box">
+                            <form id="search-teachers">
+                                <div class="inline">
+                                    <h3>Matéria</h3>
+                                    <select name="subject" class="input select inline" required>
+                                        {% for subject in subjects %}
+                                        <option value="{{loop.index}}" {{ "selected" if filter.subject == loop.index}}>
+                                            {{subject}}
+                                        </option>
+                                        {%endfor%}
+                                    </select>
+                                </div>
+                                <div class="inline">
+                                    <h3>Dia da semana</h3>
+                                    <select class="input select inline" name="weekday" required>
+                                        {% for weekday in weekdays %}
+                                            <option value="{{loop.index}}" {{"selected" if filter.weekday == loop.index}}>
+                                                {{weekday}}
+                                            </option>
+                                        {%endfor%}
+                                    </select>
+                                </div>
+                                <div class="inline">
+                                    <h3>Horário</h3>
+                                    <input type="time" name="time" class="input inline" id="time" value="{{filter.time}}" required>
+                                </div>
+                                <div class="inline">
+                                    <button class="btn--green" type="submit">Filtrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Nenhum professor encontrado com sua pesquisa</p>
+                </div>
+                <nav class="teachers">
+                    {% for proffy in proffys %}
+                        <div class="card">
+                            <div class="professor">
+                                <h2>{{proffy.name}}</h2>
+                                <h4>{{proffy.classes}}</h4>
+                                <p>
+                                    {{proffy.bio}}
+                                </p>
+                            </div>  
+                            <div class="price">
+                                <h6 class="inline">Preço/hora <b>R${{proffy.cost}}</b></h6>
+                                <a href="#" class="btn inline"><img src="../../public/images/icons/whatsapp.svg"> Entrar em contato</a>
+                            </div>
+                        </div>
+                    {%endfor%}
+                </nav>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

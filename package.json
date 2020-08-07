@@ -1,0 +1,26 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odiegoalessandro/nlw.git"
+  },
+  "author": "Diego Alessandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/odiegoalessandro/nlw/issues"
+  },
+  "homepage": "https://github.com/odiegoalessandro/nlw#readme"
+}
